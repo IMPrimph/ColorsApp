@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import Minipalette from './MiniPalette';
+import './PaletteList.css'
 import { withStyles } from '@material-ui/styles'
+
 
 const styles = {
     root: {
         backgroundColor: 'blue',
-        height: "100%",
+        height: "100vh",
         display: 'flex',
         alignItems: 'flex-start',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     container: {
         width: "50%",
@@ -29,7 +31,7 @@ const styles = {
         width: "100%",
         display: 'grid',
         gridTemplateColumns: "repeat(3, 30%)",
-        fridGap: "5%"
+        gridGap: "5%",
     }
 }
 
