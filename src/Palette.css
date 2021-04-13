@@ -1,18 +1,17 @@
-.Palette {
+/* .Palette {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  /* remove in future */
   overflow: auto;
-}
+} */
 
-.Palette::-webkit-scrollbar {
+/* .Palette::-webkit-scrollbar {
   display: none;
-}
+} */
 
-.Palette-colors {
+/* .Palette-colors {
   height: 90%;
-}
+} */
 
 .Palette-footer {
   background-color: white;
