@@ -4,7 +4,6 @@ import 'rc-slider/assets/index.css';
 import Navbar from './Navbar';
 import PaletteFooter from './PaletteFooter'
 import { withStyles } from '@material-ui/styles'
-import './Palette.css'
 import styles from "./styles/PaletteStyles"
 
 
