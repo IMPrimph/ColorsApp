@@ -7,11 +7,12 @@ import { withStyles } from '@material-ui/styles'
 
 const styles = {
     root: {
-        backgroundColor: 'blue',
         height: "100vh",
+        backgroundColor: 'blue',
         display: 'flex',
         alignItems: 'flex-start',
         justifyContent: 'center',
+        overflow: 'auto'
     },
     container: {
         width: "50%",
@@ -32,6 +33,9 @@ const styles = {
         display: 'grid',
         gridTemplateColumns: "repeat(3, 30%)",
         gridGap: "5%",
+    },
+    torso: {
+        marginBottom: "10px"
     }
 }
 
