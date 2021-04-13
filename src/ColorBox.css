@@ -9,7 +9,16 @@
   /* remove in future */
 }
 
-.copy-button {
+.SingleColorPalette .ColorBox {
+  height: 50%;
+}
+
+.ColorBox.go-back {
+  background-color: black;
+}
+
+.copy-button,
+.back-button {
   width: 100px;
   height: 30px;
   position: absolute;
@@ -26,7 +35,14 @@
   color: whitesmoke;
   text-transform: uppercase;
   border: none;
+}
+
+.copy-button {
   opacity: 0;
+}
+
+.back-button {
+  text-decoration: none;
 }
 
 .ColorBox:hover .copy-button {
