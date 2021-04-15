@@ -1,3 +1,5 @@
+import sizes from './sizes'
+
 const styles = {
     PaletteFooter: {
         backgroundColor: "white",
@@ -6,7 +8,10 @@ const styles = {
         justifyContent: "flex-end",
         alignItems: "center",
         fontWeight: "bold",
-        marginBottom: "0"
+        marginBottom: "0",
+        [sizes.down("xs")]: {
+            display: "none"
+        }
     },
     emoji: {
         fontSize: "1.5rem",

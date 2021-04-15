@@ -23,7 +23,7 @@ const styles = {
         },
         [sizes.down('xs')]: {
             width: '100%',
-            height: props => (props.showingFullPalette ? '4.9%' : '10%'),
+            height: props => (props.showingFullPalette ? '10%' : '10%'),
         }
     },
     copyText: {
