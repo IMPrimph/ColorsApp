@@ -1,13 +1,15 @@
 import sizes from './sizes'
+import bg from './bg.svg'
 
 const styles = {
     root: {
         height: "100vh",
-        backgroundColor: 'blue',
         display: 'flex',
         alignItems: 'flex-start',
         justifyContent: 'center',
-        // overflow: 'auto'
+        backgroundColor: '#394bad',
+        backgroundImage: `url(${bg})`,
+        overflow: 'auto'
     },
     container: {
         width: "50%",
@@ -33,6 +35,9 @@ const styles = {
             textDecoration: 'none'
         }
     },
+    heading: {
+        fontSize: '2rem'
+    },
     palettes: {
         boxSizing: 'border-box',
         width: "100%",
@@ -44,7 +49,7 @@ const styles = {
         },
         [sizes.down("xs")]: {
             gridTemplateColumns: "repeat(1, 100%)",
-            gridGap: "1rem"
+            gridGap: "1.7rem"
         }
     },
     torso: {
