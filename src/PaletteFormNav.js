@@ -101,6 +101,7 @@ class PaletteFormNav extends Component {
                                     label="Palette Name"
                                     name="newPaletteName"
                                     onChange={this.handleChange}
+                                    autoComplete="off"
                                     validators={["required", "isPaletteNameUnique"]}
                                     errorMessages={["Enter palette name", "Name already taken"]}
                                 />
