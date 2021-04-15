@@ -109,7 +109,7 @@ const seedColors = [
     {
         paletteName: "Flat UI Colors Aussie",
         id: "flat-ui-colors-aussie",
-        emoji: "🍎",
+        emoji: "☝️",
         colors: [
             { name: "Beekeeper", color: "#f6e58d" },
             { name: "SpicedNectarine", color: "#ffbe76" },
@@ -136,7 +136,7 @@ const seedColors = [
     {
         paletteName: "Flat UI Colors British",
         id: "flat-ui-colors-british",
-        emoji: "🍕",
+        emoji: "🎅🏼",
         colors: [
             { name: "ProtossPylon", color: "#00a8ff" },
             { name: "Periwinkle", color: "#9c88ff" },
