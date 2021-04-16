@@ -59,7 +59,7 @@ class PaletteMetaForm extends Component {
     }
 
     render() {
-        const { newPaletteName } = this.state
+        const { newPaletteName, stage } = this.state
         const { hideForm } = this.props;
         return (
             <div>
@@ -71,7 +71,7 @@ class PaletteMetaForm extends Component {
                     />
                 </Dialog>
                 <Dialog
-                    open={this.state.stage === 'form'}
+                    open={stage === 'form'}
                     onClose={this.handleClose}
                     aria-labelledby="form-dialog-title"
                     onClose={hideForm}
