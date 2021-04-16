@@ -5,7 +5,7 @@ const styles = {
         backgroundColor: "white",
         height: "6vh",
         display: "flex",
-        justifyContent: "flex-end",
+        justifyContent: "space-between",
         alignItems: "center",
         fontWeight: "bold",
         marginBottom: "0",
@@ -16,6 +16,9 @@ const styles = {
     emoji: {
         fontSize: "1.5rem",
         margin: "0 0.5rem",
+    },
+    copy: {
+        marginLeft: '10px'
     }
 }
 

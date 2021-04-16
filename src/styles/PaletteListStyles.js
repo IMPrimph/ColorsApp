@@ -1,5 +1,5 @@
 import sizes from './sizes'
-import bg from './bg.svg'
+import bg from './Confetti-Doodles.svg'
 
 const styles = {
     "@global": {
@@ -18,7 +18,10 @@ const styles = {
         justifyContent: 'center',
         backgroundColor: '#394bad',
         backgroundImage: `url(${bg})`,
-        overflow: 'auto'
+        overflow: 'auto',
+        "&::-webkit-scrollbar": {
+            display: "none"
+        }
     },
     container: {
         width: "50%",
@@ -61,8 +64,8 @@ const styles = {
             gridGap: "1.7rem"
         }
     },
-    torso: {
-        marginBottom: "10px"
+    link: {
+        fontSize: '1.3rem',
     }
 }
 
