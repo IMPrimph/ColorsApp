@@ -69,6 +69,21 @@ class App extends Component {
 
               <Route
                 exact
+                path="/palette/:paletteId/:colorId"
+                render={(routeProps) => (
+                  <Page>
+                    <SingleColorPalette
+                      colorId={routeProps.match.params.colorId}
+                      palette={generatePalette(
+                        this.findPalette(routeProps.match.params.paletteId)
+                      )}
+                    />
+                  </Page>
+                )}
+              />
+
+              <Route
+                exact
                 path="/"
                 render={(routeProps) => (
                   <Page>
@@ -94,20 +109,7 @@ class App extends Component {
                 )}
               />
 
-              <Route
-                exact
-                path="/palette/:paletteId/:colorId"
-                render={(routeProps) => (
-                  <Page>
-                    <SingleColorPalette
-                      colorId={routeProps.match.params.colorId}
-                      palette={generatePalette(
-                        this.findPalette(routeProps.match.params.paletteId)
-                      )}
-                    />
-                  </Page>
-                )}
-              />
+
 
             </Switch>
           </CSSTransition>
