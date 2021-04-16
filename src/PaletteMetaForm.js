@@ -55,6 +55,7 @@ class PaletteMetaForm extends Component {
             emoji: emoji.native
         }
         this.props.handleSubmit(newPalette)
+        this.setState({ stage: "" });
     }
 
     render() {
@@ -83,6 +84,7 @@ class PaletteMetaForm extends Component {
                                 Make sure it's unique!
                         </DialogContentText>
                             <TextValidator
+                                autoFocus
                                 value={newPaletteName}
                                 label="Palette Name"
                                 name="newPaletteName"
